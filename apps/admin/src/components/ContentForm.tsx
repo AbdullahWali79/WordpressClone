@@ -133,7 +133,7 @@ export function ContentForm({ label, categories, onSubmit }: ContentFormProps) {
         {error ? <p className="form-error">{error}</p> : null}
 
         <button className="primary-button" type="submit" disabled={saving}>
-          {saving ? "Saving..." : "Publish Draft"}
+          {saving ? "Saving..." : "Save Item"}
         </button>
       </form>
     </section>

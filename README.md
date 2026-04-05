@@ -32,10 +32,22 @@ apps/
 npm install
 ```
 
+If PowerShell blocks `npm`, use:
+
+```bash
+npm.cmd install
+```
+
 2. Create the API environment file:
 
 ```bash
 copy apps\\api\\.env.example apps\\api\\.env
+```
+
+Optional admin environment file:
+
+```bash
+copy apps\\admin\\.env.example apps\\admin\\.env
 ```
 
 3. Update `DATABASE_URL` in `apps/api/.env` to point to your MySQL database.
