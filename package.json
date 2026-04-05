@@ -1,0 +1,17 @@
+{
+  "name": "wordpressclone",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/admin",
+    "apps/api"
+  ],
+  "scripts": {
+    "dev:admin": "npm run dev --workspace @wpclone/admin",
+    "dev:api": "npm run dev --workspace @wpclone/api",
+    "build": "npm run build --workspace @wpclone/admin && npm run build --workspace @wpclone/api",
+    "db:generate": "npm run db:generate --workspace @wpclone/api",
+    "db:push": "npm run db:push --workspace @wpclone/api",
+    "db:seed": "npm run db:seed --workspace @wpclone/api"
+  }
+}
