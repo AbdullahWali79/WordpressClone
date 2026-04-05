@@ -1,0 +1,9 @@
+
+> wordpressclone@0.1.0 dev:api
+> npm run dev --workspace @wpclone/api
+
+
+> @wpclone/api@0.1.0 dev
+> tsx watch src/index.ts
+
+WPClone API running on http://localhost:4000
